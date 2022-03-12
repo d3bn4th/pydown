@@ -34,6 +34,7 @@ def down(type):
         # To get the highest resolution streams
         yt.streams.get_highest_resolution().download()
         print("Downloading......")
+        ys.download(r'C:\Users\thicc\Student Dropbox (Old)\Arihant Debnath\My PC (Thinkpad)\Desktop')
         print("Download completed!!")
 
 down(type)
