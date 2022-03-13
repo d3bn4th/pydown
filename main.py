@@ -28,7 +28,7 @@ def down(file_type):
 
 # delete the file
 def delete_file_function():
-    # delete file
+
     delete_file = input("Do you want to delete the file(y/n) \n>> ")
     if delete_file == "y":
         os.remove(file_location)
@@ -37,7 +37,7 @@ def delete_file_function():
         print("File :" + file_title+ " Saved \n" + "Location: "+file_location)
 
 
-# Driver code
+ # Driver code
 
 #downloading the file
 down(type)
