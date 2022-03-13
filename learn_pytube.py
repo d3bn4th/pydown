@@ -1,14 +1,3 @@
-'''from pytube import YouTube
-
-link = input("Link :")
-yt = YouTube(link)
-ys = yt.streams.get_highest_resolution()
-ys.download(r'C:\Users\thicc\Student Dropbox (Old)\Arihant Debnath\My PC (Thinkpad)\Desktop')
-#ys.download(r'C:\Users\thicc\Student Dropbox (Old)\Arihant Debnath\My PC (Thinkpad)\Desktop')
-
-
-# https://www.youtube.com/watch?v=mfqsEpjEtrw
-'''
 # importing packages
 from pytube import YouTube
 import os
