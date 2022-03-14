@@ -1,7 +1,7 @@
 from pytube import YouTube
 import os
 
-link = input("Enter the link /n>>")
+link = input("Enter the link \n>>")
 yt = YouTube(link)
 file_type = input("Audio- a or Video- v \n>> ")
 
@@ -37,13 +37,16 @@ def delete_file_function():
         print("File :" + file_title+ " Saved \n" + "Location: "+file_location)
 
 
- # Driver code
+# Driver code
 
 #downloading the file
-down(type)
+down(file_type)
 
 # getting the title of the video
 file_title = yt.title
+file_title = file_title.replace(".", "")
+file_title = file_title.replace("'", "")
+file_title = file_title.replace('"', "")
 
 # getting the current working directory
 cwd = os.getcwd()
