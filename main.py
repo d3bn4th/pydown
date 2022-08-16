@@ -1,7 +1,16 @@
 from pytube import YouTube
 import os
+from youtubesearchpython import VideosSearch
 
-link = input("Enter the link \n>>")
+vid_name = input("Video Search : ")
+videosSearch = VideosSearch(vid_name, limit = 1)
+videoResult = videosSearch.result();
+# print(videoResult)
+
+link = videoResult['result'][0]['link']
+print(link)
+
+# link = input("Enter the link \n>>")
 yt = YouTube(link)
 file_type = input("Audio- a or Video- v \n>> ")
 
@@ -58,3 +67,4 @@ os.startfile(file_location)
 
 # to delete the file
 delete_file_function()
+
